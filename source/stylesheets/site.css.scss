@@ -22,7 +22,7 @@ body {
     font-family: 'Merriweather', serif;
     font-weight: 300;
     font-size: 16px;
-    padding-right: 3rem;
+    padding-right: 3em;
 }
 
 a {
@@ -44,11 +44,11 @@ h1, h2.home, h5 {
 }
 
 h2, h3 {
-    padding-left: 2rem;
+    padding-left: 2em;
 }
 
 p {
-    padding-left: 5rem;
+    padding-left: 5em;
 }
 
 img {
@@ -67,12 +67,22 @@ img {
     }
     img {
         float: left;
-        padding-left: 2rem;
-        padding-right: 1rem;
+        padding-left: 2em;
+        padding-right: 1em;
     }
 
     p {
-        padding-right: 4rem;
+        padding-right: 4em;
+    }
+}
+
+i {
+    .fa {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &.colored {
+        font-size: 4em;
     }
 }
 
