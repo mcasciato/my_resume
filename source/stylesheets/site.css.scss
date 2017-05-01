@@ -34,6 +34,33 @@ a {
   }
 }
 
+h1, h2, h3, h5 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+}
+
+h1, h2.home, h5 {
+    text-align: center;
+}
+
+h2, h3 {
+    padding-left: 2rem;
+}
+
+p {
+    padding-left: 5rem;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    // border: 5px solid $oodle_3;
+    // border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
