@@ -96,6 +96,49 @@ p.skills {
     margin: 15px;
 }
 
+.social {
+    .fa {
+        padding: 15px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+        color: $white;
+    }
+
+    &.fa:hover {
+        opacity: 0.7;
+    }
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    width: 100%;
+}
+
+.fa-facebook {
+    background: $facebook;
+}
+
+.fa-twitter {
+    background: $twitter;
+}
+
+.fa-linkedin {
+    background: $linkedin;
+}
+
+.fa-github {
+    background: $black;
+}
+
+.fa-medium {
+    background: $medium;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
