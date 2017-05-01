@@ -1,14 +1,35 @@
 !!!
 %html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
-    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
-    %link{href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", rel:  "stylesheet"}/
-    %link{href: "https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css", rel: "stylesheet"}/
-    %title= "Michael Casciato"
-    = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
-  %body
+    %head
+        %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+        %meta{:charset => "utf-8"}/
+        %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+        %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+        %link{href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", rel:  "stylesheet"}/
+        %link{href: "https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css", rel: "stylesheet"}/
+        %title= "Michael Casciato"
+        = stylesheet_link_tag "site"
+        = javascript_include_tag "site"
+    %body
+        #mySidenav.sidenav
+            %a.closebtn{:href => "javascript:void(0)", :onclick => "closeNav()"} ×
+            %a{href: "/"} home
+            %a{href: "/education.html"} education
+            %a{href: "/skills.html"} skills
+            %a{href: "/projects.html"} projects
+        %span.nav{:onclick => "openNav()", :style => "font-size:30px;cursor:pointer"} ☰
+
     = yield
+
+:javascript
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
