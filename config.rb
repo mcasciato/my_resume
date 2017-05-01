@@ -5,6 +5,10 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :livereload
+
+set :haml, { :ugly => true, :format => :html5 }
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
