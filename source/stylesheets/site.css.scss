@@ -1,10 +1,12 @@
+@import url( 'https://fonts.googleapis.com/css?family=Lato:400,300,700');
+@import url( 'https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+@import url( 'https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic');
+@import url( 'https://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic');
+
 body {
   background-color: #fbc547;
   color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: 'Merriweather', serif;
   padding: 18vh 1rem;
   text-align: center;
 }
