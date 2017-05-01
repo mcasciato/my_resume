@@ -39,6 +39,10 @@ h1, h2, h3, h5 {
     font-weight: 500;
 }
 
+h1 {
+    font-size: 3em;
+}
+
 h1, h2.home, h5 {
     text-align: center;
     padding: 5px;
@@ -74,6 +78,23 @@ img {
 
     p {
         padding-right: 4em;
+    }
+}
+
+.education {
+    padding-right: 3em;
+
+    li {
+        list-style-type: none;
+        margin: 5px;
+        padding-left: 5em;
+    }
+
+    li::before {
+        content: "\f067";
+        font-family: "FontAwesome";
+        color: $oodle_3;
+        margin-right: 4px;
     }
 }
 
@@ -190,6 +211,10 @@ p.skills {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+span.nav {
+    color: $oodle_2;
 }
 
 @media screen and(max-height: 450px) {
