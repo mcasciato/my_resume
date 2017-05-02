@@ -1,14 +1,38 @@
 .projects
     %h1 PROJECTS
-    %img{src: '/images/flix4me.jpeg'}
-    %h2 FLIX4ME
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    %img{src: '/images/myceus.jpeg'}
-    %h2 MYCEUS
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    %img{src: '/images/sinatraInstruments.jpeg'}
-    %h2 MY INSTRUMENTS
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    %img{src: '/images/politicalNews.jpeg'}
-    %h2 POLITICAL NEWS
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    .card.card--big
+        .card__image{:style => "background-image: url('/images/flix4me.jpeg')"}
+        %h2.card__title Flix4Me
+        %p.card__text A fun, interactive app to log your favorite movies -- It’s the Goodreads for movies!
+        .card__action-bar
+            %button.card__button
+                %a{href: 'http://www.google.com', target: '_blank'} See it Live
+            %button.card__button
+                %a{href: 'http://www.google.com', target: '_blank'} View on GitHub
+    .card.card--big
+        .card__image{:style => "background-image: url('/images/myceus.jpeg')"}
+        %h2.card__title MyCEUs
+        %p.card__text A fun, interactive app to log your favorite movies -- It’s the Goodreads for movies!
+        .card__action-bar
+            %button.card__button
+                %a{href: 'http://www.google.com', target: '_blank'} See it Live
+            %button.card__button
+                %a{href: 'http://www.google.com', target: '_blank'} View on GitHub
+    .card.card--big
+        .card__image{:style => "background-image: url('/images/sinatraInstruments.jpeg')"}
+        %h2.card__title My Instruments
+        %p.card__text A fun, interactive app to log your favorite movies -- It’s the Goodreads for movies!
+        .card__action-bar
+            %button.card__button
+                %a{href: 'http://www.google.com', target: '_blank'} See it Live
+            %button.card__button
+                %a{href: 'http://www.google.com', target: '_blank'} View on GitHub
+    .card.card--big
+        .card__image{:style => "background-image: url('/images/politicalNews.jpeg')"}
+        %h2.card__title Political News
+        %p.card__text A fun, interactive app to log your favorite movies -- It’s the Goodreads for movies!
+        .card__action-bar
+            %button.card__button
+                %a{href: 'http://www.google.com', target: '_blank'} See it Live
+            %button.card__button
+                %a{href: 'http://www.google.com', target: '_blank'} View on GitHub
