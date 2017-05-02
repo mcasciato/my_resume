@@ -293,7 +293,7 @@ span.nav {
   content: "";
   display: block;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: $oodle_2;
   top: 0;
   left: 0;
   right: 0;
@@ -384,7 +384,7 @@ button {
 
     a {
         text-decoration: none;
-        color: $oodle_2;
+        color: $oodle_1;
         font-size: 14px;
 
         &:hover {
