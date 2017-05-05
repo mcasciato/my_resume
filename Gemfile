@@ -10,4 +10,4 @@ gem 'rack-contrib'
 gem 'puma'
 gem 'rake'
 
-ruby "~> 2.3.0"
+ruby "~> 2.3.1"
