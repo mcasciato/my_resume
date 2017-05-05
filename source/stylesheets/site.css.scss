@@ -50,6 +50,9 @@ h1 {
 }
 
 .home {
+
+    align-items: center;
+
     h1, h2 {
         text-align: center;
         padding: 5px;
@@ -84,5 +87,6 @@ img {
     // border: 5px solid $oodle_3;
     // border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    padding-top: 2em;
+    width: 200px;
 }
