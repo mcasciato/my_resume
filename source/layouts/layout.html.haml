@@ -9,6 +9,11 @@
         %link{href: "https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css", rel: "stylesheet"}/
         %title= "Michael Casciato"
         = stylesheet_link_tag "site"
+        = stylesheet_link_tag "nav"
+        = stylesheet_link_tag "contact"
+        = stylesheet_link_tag "education"
+        = stylesheet_link_tag "projects"
+        = stylesheet_link_tag "skills"
         = javascript_include_tag "site"
     %body
         #mySidenav.sidenav
@@ -18,17 +23,16 @@
             %a{href: "/skills"} skills
             %a{href: "/projects"} projects
         %span.nav{:onclick => "openNav()", :style => "font-size:30px;cursor:pointer"} ☰
+        .social.icon-bar
+            %a.fa.fa-twitter.fa-2x{href: 'https://www.twitter.com/michaelcasciato', target: '_blank'}
+            %a.fa.fa-facebook.fa-2x{href: 'https://www.facebook.com/michael.casciato.7', target: '_blank'}
+            %a.fa.fa-github.fa-2x{href: 'https://www.github.com/mcasciato', target: '_blank'}
+            %a.fa.fa-linkedin.fa-2x{href: 'https://www.linkedin.com/in/michaelcasciato/', target: '_blank'}
+            %a.fa.fa-medium.fa-2x{href: 'https://www.medium.com/@mcasciato', target: '_blank'}
+            %a.fa.fa-envelope.fa-2x{href: 'mailto:casciatom@gmail.com'}
+            %a.fa.fa-phone.fa-2x{href: 'tel:+16143094611', target: '_blank'}
+
     = yield
-    %br
-    %br
-    .social.icon-bar
-        %a.fa.fa-twitter.fa-2x{href: 'https://www.twitter.com/michaelcasciato', target: '_blank'}
-        %a.fa.fa-facebook.fa-2x{href: 'https://www.facebook.com/michael.casciato.7', target: '_blank'}
-        %a.fa.fa-github.fa-2x{href: 'https://www.github.com/mcasciato', target: '_blank'}
-        %a.fa.fa-linkedin.fa-2x{href: 'https://www.linkedin.com/in/michaelcasciato/', target: '_blank'}
-        %a.fa.fa-medium.fa-2x{href: 'https://www.medium.com/@mcasciato', target: '_blank'}
-        %a.fa.fa-envelope.fa-2x{href: 'mailto:casciatom@gmail.com'}
-        %a.fa.fa-phone.fa-2x{href: 'tel:+16143094611', target: '_blank'}
 
 :javascript
     function openNav() {
