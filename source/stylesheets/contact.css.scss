@@ -1,0 +1,98 @@
+// Colors
+$white: #fff;
+$black: #000;
+$medium: #00ab6b;
+$youtube: #cd201f;
+$external: #2c3e50;
+$facebook: #3B5998;
+$twitter: #55ACEE;
+$linkedin: #007bb5;
+$oodle_1: #F03465;
+$oodle_2: #00B4FF;
+$oodle_3: #1ECE6D;
+
+.social {
+    .fa {
+        padding: 15px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+        color: $white;
+    }
+
+    &.fa:hover {
+        opacity: 0.7;
+    }
+        text-align: center;
+        overflow: hidden;
+        position: fixed;
+        // top: 25%;
+        left: 0;
+        width: 100%;
+    }
+
+.fa-facebook {
+    background: $facebook;
+}
+
+.fa-twitter {
+    background: $twitter;
+}
+
+.fa-linkedin {
+    background: $linkedin;
+}
+
+.fa-github {
+    background: $black;
+}
+
+.fa-medium {
+    background: $medium;
+}
+
+.fa-envelope {
+    background: $oodle_1;
+}
+
+.fa-phone {
+    background: $oodle_2;
+}
+
+.icon-bar {
+    width: 90px; /* Set a specific width */
+    padding-left: 3em;
+}
+
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
+    top: 0;
+}
+
+.icon-bar a:hover {
+    opacity: 0.7; /* Add a hover color */
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
+    .social {
+        .fa {
+            padding: 10px;
+            font-size: 15px;
+            width: 15px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            color: $white;
+        }
+    }
+}
