@@ -1,0 +1,40 @@
+.skills {
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+.skills span {
+    margin: 15px;
+}
+
+i {
+    .fa {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &.colored {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    i.colored {
+        font-size: 2em;
+    }
+
+    .skills {
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            padding: 2px;
+        }
+    }
+}
