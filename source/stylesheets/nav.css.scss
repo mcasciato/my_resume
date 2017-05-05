@@ -1,0 +1,89 @@
+// Colors
+$white: #fff;
+$black: #000;
+$medium: #00ab6b;
+$youtube: #cd201f;
+$external: #2c3e50;
+$facebook: #3B5998;
+$twitter: #55ACEE;
+$linkedin: #007bb5;
+$oodle_1: #F03465;
+$oodle_2: #00B4FF;
+$oodle_3: #1ECE6D;
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: $oodle_1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Dosis', sans-serif;
+    color: $white;
+    display: block;
+    transition: 0.3s;
+}
+
+.offcanvas a:focus,
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+span.nav {
+    color: $oodle_2;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+    float: right;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: $oodle_1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media screen and(max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+		a {
+			font-size: 14px;
+		}
+	}
+}
