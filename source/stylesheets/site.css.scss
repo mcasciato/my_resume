@@ -27,7 +27,8 @@ body {
     font-family: 'Merriweather', serif;
     font-weight: 300;
     font-size: 16px;
-    padding-right: 3em;
+    padding-left: 3em;
+    margin: 0;
 }
 
 a {
@@ -116,149 +117,6 @@ img {
     }
 }
 
-i {
-    .fa {
-        transition: all 0.2s ease-in-out;
-    }
-
-    &.colored {
-        font-size: 4em;
-    }
-}
-
-.skills {
-    h1 {
-        text-align: center;
-    }
-
-    p {
-        text-align: center;
-        padding: 5px;
-    }
-}
-
-.skills span {
-    margin: 15px;
-}
-
-.social {
-    .fa {
-        padding: 15px;
-        font-size: 20px;
-        width: 20px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        border-radius: 50%;
-        color: $white;
-    }
-
-    &.fa:hover {
-        opacity: 0.7;
-    }
-    text-align: center;
-    overflow: hidden;
-    position: fixed;
-    top: 25%;
-    right: 0;
-    width: 100%;
-}
-
-.fa-facebook {
-    background: $facebook;
-}
-
-.fa-twitter {
-    background: $twitter;
-}
-
-.fa-linkedin {
-    background: $linkedin;
-}
-
-.fa-github {
-    background: $black;
-}
-
-.fa-medium {
-    background: $medium;
-}
-
-.fa-envelope {
-    background: $oodle_1;
-}
-
-.fa-phone {
-    background: $oodle_2;
-}
-
-.icon-bar {
-    width: 90px; /* Set a specific width */
-}
-
-.icon-bar a {
-    display: block; /* Make the links appear below each other instead of side-by-side */
-    text-align: center; /* Center-align text */
-    padding: 16px; /* Add some padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font-size */
-}
-
-.icon-bar a:hover {
-    opacity: 0.7; /* Add a hover color */
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: $oodle_1;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Dosis', sans-serif;
-    color: $white;
-    display: block;
-    transition: 0.3s;
-}
-
-.offcanvas a:focus,
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-span.nav {
-    color: $oodle_2;
-    font-family: 'Dosis', sans-serif;
-    font-size: 2em;
-}
-
-@media screen and(max-height: 450px) {
-	.sidenav {
-		padding-top: 15px;
-		a {
-			font-size: 14px;
-		}
-	}
-}
 .card {
   display: inline-block;
   will-change: transform;
@@ -307,7 +165,7 @@ span.nav {
       -ms-user-select: none;
           user-select: none;
   font-size: 24px;
-  color: #FFF;
+  color: $white;
   margin: 0;
   position: absolute;
   left: 0;
@@ -330,7 +188,7 @@ span.nav {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  color: #000;
+  color: $black;
   left: 88px;
   right: 0;
   top: 45px;
@@ -354,7 +212,7 @@ span.nav {
   margin: 0;
   line-height: 1.6;
   position: absolute;
-  color: #000;
+  color: $black;
   overflow: hidden;
   -webkit-transition: width 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: width 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -398,7 +256,6 @@ button {
   display: inline-block;
   line-height: 52px;
   padding: 0 16px;
-  color: #FF1744;
   float: right;
 }
 .card--big {
