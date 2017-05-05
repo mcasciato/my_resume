@@ -34,8 +34,7 @@ $oodle_3: #1ECE6D;
     transition: 0.3s;
 }
 
-.offcanvas a:focus,
-.sidenav a:hover {
+.sidenav a:hover, .offcanvas a:focus {
     color: #f1f1f1;
 }
 
@@ -55,31 +54,10 @@ span.nav {
     padding-right: 1em;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: $oodle_1;
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
 }
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
 @media screen and(max-height: 450px) {
 	.sidenav {
 		padding-top: 15px;
