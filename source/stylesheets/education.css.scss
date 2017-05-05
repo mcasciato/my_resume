@@ -1,0 +1,36 @@
+//colors
+$white: #fff;
+$black: #000;
+$medium: #00ab6b;
+$youtube: #cd201f;
+$external: #2c3e50;
+$facebook: #3B5998;
+$twitter: #55ACEE;
+$linkedin: #007bb5;
+$oodle_1: #F03465;
+$oodle_2: #00B4FF;
+$oodle_3: #1ECE6D;
+
+.education {
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        padding-left: 4em;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 5px;
+        padding-left: 5em;
+    }
+
+    li::before {
+        content: "\f067";
+        font-family: "FontAwesome";
+        color: $oodle_3;
+        margin-right: 4px;
+    }
+}
