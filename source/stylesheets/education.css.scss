@@ -13,18 +13,16 @@ $oodle_3: #1ECE6D;
 
 .education {
 
+    padding-left: 7em;
+
     h1 {
         text-align: center;
-    }
-
-    h3 {
-        padding-left: 4em;
     }
 
     li {
         list-style-type: none;
         margin: 5px;
-        padding-left: 5em;
+        padding-left: 2em;
     }
 
     li::before {
